@@ -1,5 +1,5 @@
 
---- This will create a new table with ManagerId to train hierarchy queries.
+--- This will create a new table with ManagerId to train hierarchy queries. It works on AdventureWorks2019 database.
 GO  
   if OBJECT_ID('HumanResources.EmployeeDemo') is not null
  drop table HumanResources.EmployeeDemo 
