@@ -1,0 +1,2 @@
+# AdventureWorks2019Queries
+AdventureWorks2019 and AdventureWorksLT2019 queries
