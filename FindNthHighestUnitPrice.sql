@@ -1,0 +1,2 @@
+--The top wrapping query is to get all collumns, because when you use distinc over order by you can only use have one column. Inside this wrapping SQL query there are two queries to limit from the top and the bottom.
+select top(1) * from [AdventureWorks2008R2].[Sales].[SalesOrderDetail] sod where sod.UnitPrice = (select top(1) result.UnitPrice from (SELECT distinct TOP(50)  UnitPrice FROM [AdventureWorks2008R2].[Sales].[SalesOrderDetail] order by unitprice desc) result order by UnitPrice)
